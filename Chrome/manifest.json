@@ -1,0 +1,24 @@
+{
+	"name":"FaceBook Feed Sanitizer",
+	"version" : "1.0",
+	"manifest_version":2,
+	"description" : "To hide posts from facebook news feed, based on keywords.",
+	 "icons": { 
+                "19":"images/19.png", 
+                "48":"images/48.png" 
+        }, 
+    "background" : {
+    	"scripts": ["scripts/background.js"]
+    },
+    "permissions": [
+  		"tabs", 
+  		"http://*/*",
+  		"https://*/*"
+	],
+	"page_action" : {
+		"default_title" : "Facebook Feed Sanitizer, Use the options page to modify your keyword list",
+		"default_icon":"images/19.png"		
+	},
+	"options_page": "pages/options.html"
+}
+	

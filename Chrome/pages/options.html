@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            #strip {
+                width:980px;
+                margin:0 auto;
+                padding:10px;
+                text-align: center;
+                background-color:#F0F0F0;
+            }
+            h2 {
+                font-size:40px;
+                font-weight: normal;
+                margin-left:20px;
+                     
+            }
+            .hero {
+                border-top: 1px solid #AAAAAA;
+                border-bottom: 1px solid #AAAAAA;
+                padding:20px;
+                margin:10px;
+                font-family:  "Courier New", Courier, monospace;
+                font-size: larger;
+            }
+            
+            #currentList {
+                padding:10px;
+            }
+            
+            #keywords{
+                padding:5px 10px;
+                font-family:"Courier New", Courier, monospace;
+                font-size : medium;
+                color:#00FF00;
+                border : 2px dotted #00FF00;
+                border-radius: 10px;
+                background-color:#000000;
+                alignment-baseline: middle;
+            }
+            
+            button {
+                padding:10px;
+                font-size: medium;
+                background-color:#00AA00;
+                border:2px solid #000000;
+                color:#FFFF00;
+                font-size: large;                
+                font-family: "Courier New", Courier, monospace;
+            }
+            
+            #footer {
+                border-top : 1px solid #AAAAAA;
+                padding:10px;
+                text-align : right;
+                font-size: small;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="strip">
+        <h2><img src="../images/48.png" height="30px">&nbsp; FaceBook Feed Sanitizer &nbsp;<img src="../images/48.png" height="30px"></h2>
+        <div class ="hero">
+            <span class="description">This is a simple extension to hide any stories having certain keywords.<br/>
+                These keywords can be modified below. <strong>Press save to retain changes</strong></span>
+        </div>
+        
+        <div id="currentList">            
+                <textarea id="keywords" cols="50" rows="10" ></textarea><br/>
+                <button type="button" value="save" id="save">Save Keywords</button>
+        </div>        
+        <div id="footer">
+            &copy; NirmitiWorks.com
+        </div>
+        </div>
+        <script src="../scripts/options.js"></script>
+    </body>
+</html>
